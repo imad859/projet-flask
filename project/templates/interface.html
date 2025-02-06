@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/script.js" defer></script>
+</head>
+<body>
+    <div class="login-container">
+        <!-- Logo -->
+        <img src="/static/images/logo.png" alt="Logo" class="logo" />
+        <h2>Connexion</h2>
+        <div id="errorMessage" class="error-message"></div>
+        <form id="loginForm" onsubmit="event.preventDefault(); validateForm();">
+            <input type="text" id="username" placeholder="Identifiant" />
+            <input type="password" id="password" placeholder="Mot de passe" />
+            <button type="submit">Valider</button>
+            <button type="button" onclick="resetForm()">Reset</button>
+        </form>
+        <button onclick="addAccount()">Créer un compte</button>
+    </div>    
+</body>
+</html>
